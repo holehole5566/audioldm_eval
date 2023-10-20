@@ -262,13 +262,13 @@ class EvaluationHelper:
             rng_seed=2020,
         )
         out.update(metric_isc)
-        '''
+        
         if("2048" in featuresdict_1.keys() and "2048" in featuresdict_2.keys()):
             metric_fid = calculate_fid(
                 featuresdict_1, featuresdict_2, feat_layer_name="2048"
             )
             out.update(metric_fid)
-        '''
+        
         # Metrics for Autoencoder
         ######################################################################################################################
         if(calculate_psnr_ssim or calculate_lsd):
