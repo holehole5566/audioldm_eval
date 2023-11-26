@@ -191,7 +191,7 @@ class EvaluationHelper:
         # Generation, target
         torch.manual_seed(0)
 
-        num_workers = 6
+        num_workers = 0
 
         outputloader = DataLoader(
             WaveDataset(

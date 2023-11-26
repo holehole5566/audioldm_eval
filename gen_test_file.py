@@ -82,14 +82,14 @@ def gen_sine_wave(freq=600, length_seconds=6, sample_rate=_SAMPLE_RATE, param=No
 def main(argv):
     del argv  # Unused.
     for traget, count, param in [
-        ("reference", 2050, 0.0),
-        ("paired", 2050, 0.001),
+        ("reference", 50, 0.0),
+        ("paired", 50, 0.001),
         ("unpaired", 25, 0.001),
     ]:
         output_dir = os.path.join(FLAGS.test_files, "example", traget)
         create_dir(output_dir)
         print("output_dir:", output_dir)
-        frequencies = np.linspace(100, 4000, count).tolist()
+        frequencies = np.linspace(100, 1000, count).tolist()
         for freq in frequencies:
             samples = gen_sine_wave(freq, param=param)
             filename = os.path.join(output_dir, "sin_%.0f.wav" % freq)

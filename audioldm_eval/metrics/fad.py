@@ -49,7 +49,7 @@ class FrechetAudioDistance:
             ),
             batch_size=1,
             sampler=None,
-            num_workers=8,
+            num_workers=0,
         )
         data_list = []
         print("Loading data to RAM")

@@ -1,0 +1,13 @@
+Q1 happy, Q2 angry, Q3 sad, Q4 relaxed
+unpair
+Q1 vs happy  ISc:  1.13067 (0.031070);  FAD: 10.24165 
+Q2 vs happy  ISc:  1.13067 (0.031070);  FAD: 11.87506
+Q3 vs happy  ISc:  1.13067 (0.031070);  FAD: 10.66921 
+Q4 vs happy  ISc:  1.13067 (0.031070);  FAD: 11.74587
+
+pair
+Q1 vs happy  KL_Sigmoid:  6.55421; KL:  1.85447; ISc:  1.15001 (0.047025);  FAD: 12.13246
+Q2 vs happy  KL_Sigmoid:  7.04540; KL:  1.46642; ISc:  1.15001 (0.047025);  FAD: 13.02810 
+Q3 vs happy  KL_Sigmoid:  6.14988; KL:  1.82607; ISc:  1.15001 (0.047025);  FAD: 11.41289
+Q4 vs happy  KL_Sigmoid:  5.92170; KL:  1.84563; ISc:  1.15001 (0.047025);  FAD: 12.29273
+

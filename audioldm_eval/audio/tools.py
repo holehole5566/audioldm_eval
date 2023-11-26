@@ -1,5 +1,6 @@
 import torch
 import numpy as np
+from pathlib import Path
 from scipy.io.wavfile import write
 import pickle
 import json
@@ -21,6 +22,7 @@ def load_pickle(fname):
 
 def write_json(my_dict, fname):
     print("Save json file at " + fname)
+    fname = "result.json"
     json_str = json.dumps(my_dict)
     with open(fname, "w") as json_file:
         json_file.write(json_str)
